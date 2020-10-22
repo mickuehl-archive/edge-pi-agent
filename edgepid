@@ -1,0 +1,3 @@
+#!/bin/bash -e
+
+echo "Foo was here" > /home/cloud/test.txt
