@@ -7,8 +7,8 @@ After=network-online.target
 Type=simple
 Restart=on-failure
 User=cloud
-ExecStartPre=wget -q https://github.com/shadow-racer/edge-pi-agent/archive/latest.zip -O /tmp/latest.zip && unzip -q -o /tmp/latest.zip -d /home/cloud
-ExecStart=/home/cloud/edge-pi-agent-latest/edgepid
+ExecStartPre=/usr/bin/edgepiupd
+ExecStart=/home/cloud/edgepid
 
 [Install]
 WantedBy=multi-user.target
